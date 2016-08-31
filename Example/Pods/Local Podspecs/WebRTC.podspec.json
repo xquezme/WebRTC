@@ -1,0 +1,22 @@
+{
+  "name": "WebRTC",
+  "version": "1.0.0",
+  "summary": "WebRTC SDK for iOS",
+  "homepage": "http://webrtc.org/",
+  "license": {
+    "type": "BSD",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Pimenov Sergey": "pimenov.sergei@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/xquezme/WebRTC.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "public_header_files": "WebRTC/WebRTC.framework/Headers/**/*.h",
+  "vendored_frameworks": "WebRTC/WebRTC.framework"
+}

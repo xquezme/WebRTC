@@ -1,0 +1,7 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'WebRTC_Example' do
+  pod 'WebRTC', :path => '../'
+  pod 'SocketRocket'
+end
