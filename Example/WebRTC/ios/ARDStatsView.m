@@ -10,43 +10,43 @@
 
 #import "ARDStatsView.h"
 
-#import "WebRTC/RTCStatsReport.h"
+#import "WebRTC/RTCLegacyStatsReport.h"
 
 #import "ARDStatsBuilder.h"
 
 @implementation ARDStatsView {
-  UILabel *_statsLabel;
-  ARDStatsBuilder *_statsBuilder;
+    UILabel *_statsLabel;
+    ARDStatsBuilder *_statsBuilder;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
-  if (self = [super initWithFrame:frame]) {
-    _statsLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-    _statsLabel.numberOfLines = 0;
-    _statsLabel.font = [UIFont fontWithName:@"Roboto" size:12];
-    _statsLabel.adjustsFontSizeToFitWidth = YES;
-    _statsLabel.minimumScaleFactor = 0.6;
-    _statsLabel.textColor = [UIColor greenColor];
-    [self addSubview:_statsLabel];
-    self.backgroundColor = [UIColor colorWithWhite:0 alpha:.6];
-    _statsBuilder = [[ARDStatsBuilder alloc] init];
-  }
-  return self;
+    if (self = [super initWithFrame:frame]) {
+        _statsLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+        _statsLabel.numberOfLines = 0;
+        _statsLabel.font = [UIFont fontWithName:@"Roboto" size:12];
+        _statsLabel.adjustsFontSizeToFitWidth = YES;
+        _statsLabel.minimumScaleFactor = 0.6;
+        _statsLabel.textColor = [UIColor greenColor];
+        [self addSubview:_statsLabel];
+        self.backgroundColor = [UIColor colorWithWhite:0 alpha:.6];
+        _statsBuilder = [[ARDStatsBuilder alloc] init];
+    }
+    return self;
 }
 
 - (void)setStats:(NSArray *)stats {
-  for (RTCStatsReport *report in stats) {
-    [_statsBuilder parseStatsReport:report];
-  }
-  _statsLabel.text = _statsBuilder.statsString;
+    for (RTCLegacyStatsReport *report in stats) {
+        [_statsBuilder parseStatsReport:report];
+    }
+    _statsLabel.text = _statsBuilder.statsString;
 }
 
 - (void)layoutSubviews {
-  _statsLabel.frame = self.bounds;
+    _statsLabel.frame = self.bounds;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size {
-  return [_statsLabel sizeThatFits:size];
+    return [_statsLabel sizeThatFits:size];
 }
 
 @end

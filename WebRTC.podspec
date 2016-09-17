@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "WebRTC"
-  s.version      = "0.0.1"
-  s.summary      = "WebRTC SDK for iOS"
+  s.version      = "54.14273-master"
+  s.summary      = "APPRTCDemo with WebRTC SDK for iOS"
   s.homepage     = "http://webrtc.org/"
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = { 'Pimenov Sergey' => 'pimenov.sergei@gmail.com' }

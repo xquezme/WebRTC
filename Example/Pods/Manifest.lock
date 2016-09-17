@@ -1,6 +1,6 @@
 PODS:
   - SocketRocket (0.5.0)
-  - WebRTC (1.0.0)
+  - WebRTC (54.14273-master)
 
 DEPENDENCIES:
   - SocketRocket
@@ -12,7 +12,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SocketRocket: 2c51efccd2d73c99a923407ca4b06e7e9da95dbf
-  WebRTC: fa9483faee0cf948c8a9625d7e6c536afe3fbbeb
+  WebRTC: 9c5e47e54472efbd5c39fdb73fdd0526799650a8
 
 PODFILE CHECKSUM: c8307c6b26474a2adf14bbbf05c9f52d18b0c5b5
 
