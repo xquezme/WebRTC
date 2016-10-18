@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "WebRTC"
-  s.version      = "54.14377-master"
+  s.version      = "54.14671-master"
   s.summary      = "APPRTCDemo with WebRTC SDK for iOS"
   s.homepage     = "http://webrtc.org/"
   s.license      = { :type => "MIT", :file => "LICENSE" }
