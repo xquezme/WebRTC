@@ -19,11 +19,17 @@
 
 #import "ARDAppClient.h"
 #import "ARDMainView.h"
+#import "ARDSettingsModel.h"
+#import "ARDSettingsViewController.h"
 #import "ARDVideoCallViewController.h"
+
+static NSString *const barButtonImageString = @"ic_settings_black_24dp.png";
 
 @interface ARDMainViewController () <
     ARDMainViewDelegate,
-    ARDVideoCallViewControllerDelegate>
+    ARDVideoCallViewControllerDelegate
+//    RTCAudioSessionDelegate>
+    >
 @end
 
 @implementation ARDMainViewController {
@@ -33,9 +39,11 @@
 }
 
 - (void)loadView {
+  self.title = @"AppRTC Mobile";
   _mainView = [[ARDMainView alloc] initWithFrame:CGRectZero];
   _mainView.delegate = self;
   self.view = _mainView;
+  [self addSettingsBarButton];
 
 //  RTCAudioSessionConfiguration *webRTCConfig =
 //      [RTCAudioSessionConfiguration webRTCConfiguration];
@@ -48,6 +56,15 @@
 
 //  [self configureAudioSession];
   [self setupAudioPlayer];
+}
+
+- (void)addSettingsBarButton {
+  UIBarButtonItem *settingsButton =
+      [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:barButtonImageString]
+                                       style:UIBarButtonItemStylePlain
+                                      target:self
+                                      action:@selector(showSettings:)];
+  self.navigationItem.rightBarButtonItem = settingsButton;
 }
 
 #pragma mark - ARDMainViewDelegate
@@ -129,7 +146,7 @@
 //  session.isAudioEnabled = NO;
 }
 
-#pragma mark - RTCAudioSessionDelegate
+//#pragma mark - RTCAudioSessionDelegate
 
 //- (void)audioSessionDidStartPlayOrRecord:(RTCAudioSession *)session {
 //  // Stop playback on main queue and then configure WebRTC.
@@ -143,7 +160,7 @@
 //    session.isAudioEnabled = YES;
 //  }];
 //}
-//
+
 //- (void)audioSessionDidStopPlayOrRecord:(RTCAudioSession *)session {
 //  // WebRTC is done with the audio session. Restart playback.
 //  [RTCDispatcher dispatchAsyncOnType:RTCDispatcherTypeMain
@@ -152,9 +169,22 @@
 //    [self restartAudioPlayerIfNeeded];
 //  }];
 //}
-//
-//#pragma mark - Private
-//
+
+#pragma mark - Private
+- (void)showSettings:(id)sender {
+  ARDSettingsViewController *settingsController =
+      [[ARDSettingsViewController alloc] initWithStyle:UITableViewStyleGrouped
+                                         settingsModel:[[ARDSettingsModel alloc] init]];
+
+  UINavigationController *navigationController =
+      [[UINavigationController alloc] initWithRootViewController:settingsController];
+  [self presentViewControllerAsModal:navigationController];
+}
+
+- (void)presentViewControllerAsModal:(UIViewController *)viewController {
+  [self presentViewController:viewController animated:YES completion:nil];
+}
+
 //- (void)configureAudioSession {
 //  RTCAudioSessionConfiguration *configuration =
 //      [[RTCAudioSessionConfiguration alloc] init];

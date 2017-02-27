@@ -10,13 +10,15 @@
 
 #import "ARDVideoCallViewController.h"
 
-//#import <WebRTC/RTCAudioSession.h">
-#import <WebRTC/RTCAVFoundationVideoSource.h>
-#import <WebRTC/RTCDispatcher.h>
-#import <WebRTC/RTCLogging.h>
+//#import "webrtc/modules/audio_device/ios/objc/RTCAudioSession.h"
 
 #import "ARDAppClient.h"
+#import "ARDSettingsModel.h"
 #import "ARDVideoCallView.h"
+#import "WebRTC/RTCAVFoundationVideoSource.h"
+#import "WebRTC/RTCDispatcher.h"
+#import "WebRTC/RTCLogging.h"
+#import "WebRTC/RTCMediaConstraints.h"
 
 @interface ARDVideoCallViewController () <ARDAppClientDelegate,
     ARDVideoCallViewDelegate>
@@ -44,6 +46,13 @@
   if (self = [super init]) {
     _delegate = delegate;
     _client = [[ARDAppClient alloc] initWithDelegate:self];
+    ARDSettingsModel *settingsModel = [[ARDSettingsModel alloc] init];
+    RTCMediaConstraints *cameraConstraints = [[RTCMediaConstraints alloc]
+        initWithMandatoryConstraints:nil
+                 optionalConstraints:[settingsModel
+                                         currentMediaConstraintFromStoreAsRTCDictionary]];
+    [_client setMaxBitrate:[settingsModel currentMaxBitrateSettingFromStore]];
+    [_client setCameraConstraints:cameraConstraints];
     [_client connectToRoomWithId:room
                       isLoopback:isLoopback
                      isAudioOnly:isAudioOnly
@@ -132,8 +141,8 @@
 //  if (_portOverride == AVAudioSessionPortOverrideNone) {
 //    override = AVAudioSessionPortOverrideSpeaker;
 //  }
-//  [RTCDispatcher dispatchAsyncOnType:RTCDispatcherTypeAudioSession
-//                               block:^{
+  [RTCDispatcher dispatchAsyncOnType:RTCDispatcherTypeAudioSession
+                               block:^{
 //    RTCAudioSession *session = [RTCAudioSession sharedInstance];
 //    [session lockForConfiguration];
 //    NSError *error = nil;
@@ -144,7 +153,7 @@
 //                  error.localizedDescription);
 //    }
 //    [session unlockForConfiguration];
-//  }];
+  }];
 }
 
 - (void)videoCallViewDidEnableStats:(ARDVideoCallView *)view {
