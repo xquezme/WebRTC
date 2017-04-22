@@ -18,7 +18,7 @@ WebRTC is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'WebRTC', :git => 'https://github.com/xquezme/WebRTC.git', :tag => '56.16877-master'
+pod 'WebRTC', :git => 'https://github.com/xquezme/WebRTC.git', :tag => '57.17821-master'
 ```
 
 ## Author
