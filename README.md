@@ -6,7 +6,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-* iOS 8.0 or higher
+* iOS 9.0 or higher
 
 ## Bitcode
 
@@ -18,7 +18,7 @@ WebRTC is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'WebRTC', :git => 'https://github.com/xquezme/WebRTC.git', :tag => '57.17821-master'
+pod 'WebRTC', :git => 'https://github.com/xquezme/WebRTC.git', :tag => '61.19850-master'
 ```
 
 ## Author

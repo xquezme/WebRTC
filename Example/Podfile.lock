@@ -1,6 +1,6 @@
 PODS:
   - SocketRocket (0.5.0)
-  - WebRTC (57.17821-master)
+  - WebRTC (61.19850-master)
 
 DEPENDENCIES:
   - SocketRocket
@@ -8,12 +8,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   WebRTC:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   SocketRocket: 2c51efccd2d73c99a923407ca4b06e7e9da95dbf
-  WebRTC: 9202c71d867975b41383e69529b0062e2b97fd73
+  WebRTC: 85cad411deb1c0c09b7963152cd9902e7bbae70c
 
-PODFILE CHECKSUM: c8307c6b26474a2adf14bbbf05c9f52d18b0c5b5
+PODFILE CHECKSUM: f914180ce6592b24e2acf2d07eb34a0c79a09afb
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1

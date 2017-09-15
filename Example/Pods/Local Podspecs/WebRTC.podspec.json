@@ -1,6 +1,6 @@
 {
   "name": "WebRTC",
-  "version": "57.17821-master",
+  "version": "61.19850-master",
   "summary": "APPRTCDemo with WebRTC SDK for iOS",
   "homepage": "http://webrtc.org/",
   "license": {
@@ -12,10 +12,10 @@
   },
   "source": {
     "git": "https://github.com/xquezme/WebRTC.git",
-    "tag": "57.17821-master"
+    "tag": "61.19850-master"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "public_header_files": "WebRTC/WebRTC.framework/Headers/**/*.h",
   "vendored_frameworks": "WebRTC/WebRTC.framework"
