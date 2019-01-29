@@ -1,5 +1,12 @@
 # WebRTC
 
+# This repository is no longer maintained.
+
+Issue reports and pull requests will not be attended.
+
+* Please use official pod: [[GoogleWebRTC Pod](https://cocoapods.org/pods/GoogleWebRTC)]
+* Bug tracker: [[GoogleWebRTC Bug Tracker](https://bugs.chromium.org/p/webrtc/issues/list)]
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
