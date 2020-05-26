@@ -1,0 +1,23 @@
+PODS:
+  - SocketRocket (0.5.1)
+  - WebRTC (83.00.31360)
+
+DEPENDENCIES:
+  - SocketRocket (= 0.5.1)
+  - WebRTC (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - SocketRocket
+
+EXTERNAL SOURCES:
+  WebRTC:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  WebRTC: 8dd4344bb4b4f1029f4e59a3dd57db33e1338db2
+
+PODFILE CHECKSUM: 8b419b2d6d8b6d70e711ff8dbaa39a47d94aab95
+
+COCOAPODS: 1.9.2

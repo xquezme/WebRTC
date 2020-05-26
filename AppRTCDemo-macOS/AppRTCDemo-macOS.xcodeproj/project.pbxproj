@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7577A9B3D5AACECBB233174 /* Pods_AppRTCDemo_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00595B9C58CA0F71B848075 /* Pods_AppRTCDemo_macOS.framework */; };
+		CF9332CD247DBA880024FFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9332CC247DBA880024FFD0 /* Assets.xcassets */; };
+		CF933301247DBAB20024FFD0 /* ARDTURNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332DE247DBAAE0024FFD0 /* ARDTURNClient.m */; };
+		CF933302247DBAB20024FFD0 /* ARDCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332E0247DBAAE0024FFD0 /* ARDCaptureController.m */; };
+		CF933303247DBAB20024FFD0 /* ARDSignalingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332E3247DBAAE0024FFD0 /* ARDSignalingMessage.m */; };
+		CF933304247DBAB20024FFD0 /* ARDSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332E4247DBAAF0024FFD0 /* ARDSettingsModel.m */; };
+		CF933305247DBAB20024FFD0 /* ARDMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332E5247DBAAF0024FFD0 /* ARDMessageResponse.m */; };
+		CF933306247DBAB20024FFD0 /* ARDJoinResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332E6247DBAAF0024FFD0 /* ARDJoinResponse.m */; };
+		CF933307247DBAB20024FFD0 /* ARDAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332EA247DBAAF0024FFD0 /* ARDAppClient.m */; };
+		CF933308247DBAB20024FFD0 /* ARDAppEngineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332EB247DBAAF0024FFD0 /* ARDAppEngineClient.m */; };
+		CF933309247DBAB20024FFD0 /* RTCIceServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332EC247DBAAF0024FFD0 /* RTCIceServer+JSON.m */; };
+		CF93330A247DBAB20024FFD0 /* ARDExternalSampleCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332EE247DBAB00024FFD0 /* ARDExternalSampleCapturer.m */; };
+		CF93330B247DBAB20024FFD0 /* ARDWebSocketChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332F2247DBAB00024FFD0 /* ARDWebSocketChannel.m */; };
+		CF93330C247DBAB20024FFD0 /* RTCIceCandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332F4247DBAB00024FFD0 /* RTCIceCandidate+JSON.m */; };
+		CF93330D247DBAB20024FFD0 /* ARDSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332F9247DBAB10024FFD0 /* ARDSettingsStore.m */; };
+		CF93330E247DBAB20024FFD0 /* ARDStatsBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332FA247DBAB10024FFD0 /* ARDStatsBuilder.m */; };
+		CF93330F247DBAB20024FFD0 /* ARDBitrateTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = CF9332FF247DBAB20024FFD0 /* ARDBitrateTracker.m */; };
+		CF933310247DBAB20024FFD0 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = CF933300247DBAB20024FFD0 /* RTCSessionDescription+JSON.m */; };
+		CF933314247DBAC20024FFD0 /* ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CF933312247DBAC20024FFD0 /* ARDUtilities.m */; };
+		CF93331A247DBB190024FFD0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF933319247DBB190024FFD0 /* main.m */; };
+		CF933320247DBB360024FFD0 /* APPRTCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93331C247DBB360024FFD0 /* APPRTCViewController.m */; };
+		CF933321247DBB360024FFD0 /* APPRTCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF93331E247DBB360024FFD0 /* APPRTCAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7C19C6FDC6FF337916BD30F3 /* Pods-AppRTCDemo-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppRTCDemo-macOS.release.xcconfig"; path = "Target Support Files/Pods-AppRTCDemo-macOS/Pods-AppRTCDemo-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		8B2F5F537E836E5913882C93 /* Pods-AppRTCDemo-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppRTCDemo-macOS.debug.xcconfig"; path = "Target Support Files/Pods-AppRTCDemo-macOS/Pods-AppRTCDemo-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		CF157DD8247DC09E002EA488 /* WebRTC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WebRTC.xcframework; path = ../WebRTC/WebRTC.xcframework; sourceTree = "<group>"; };
+		CF9332C3247DBA870024FFD0 /* AppRTCDemo-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AppRTCDemo-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF9332CC247DBA880024FFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF9332D1247DBA880024FFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF9332D4247DBA880024FFD0 /* AppRTCDemo_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppRTCDemo_macOS.entitlements; sourceTree = "<group>"; };
+		CF9332DA247DBAAE0024FFD0 /* ARDSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDSettingsModel+Private.h"; sourceTree = "<group>"; };
+		CF9332DB247DBAAE0024FFD0 /* RTCIceServer+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceServer+JSON.h"; sourceTree = "<group>"; };
+		CF9332DC247DBAAE0024FFD0 /* ARDMessageResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDMessageResponse+Internal.h"; sourceTree = "<group>"; };
+		CF9332DD247DBAAE0024FFD0 /* ARDJoinResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDJoinResponse.h; sourceTree = "<group>"; };
+		CF9332DE247DBAAE0024FFD0 /* ARDTURNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDTURNClient.m; sourceTree = "<group>"; };
+		CF9332DF247DBAAE0024FFD0 /* ARDSignalingMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSignalingMessage.h; sourceTree = "<group>"; };
+		CF9332E0247DBAAE0024FFD0 /* ARDCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDCaptureController.m; sourceTree = "<group>"; };
+		CF9332E1247DBAAE0024FFD0 /* ARDExternalSampleCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDExternalSampleCapturer.h; sourceTree = "<group>"; };
+		CF9332E2247DBAAE0024FFD0 /* RTCIceCandidate+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceCandidate+JSON.h"; sourceTree = "<group>"; };
+		CF9332E3247DBAAE0024FFD0 /* ARDSignalingMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSignalingMessage.m; sourceTree = "<group>"; };
+		CF9332E4247DBAAF0024FFD0 /* ARDSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsModel.m; sourceTree = "<group>"; };
+		CF9332E5247DBAAF0024FFD0 /* ARDMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMessageResponse.m; sourceTree = "<group>"; };
+		CF9332E6247DBAAF0024FFD0 /* ARDJoinResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDJoinResponse.m; sourceTree = "<group>"; };
+		CF9332E7247DBAAF0024FFD0 /* ARDWebSocketChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDWebSocketChannel.h; sourceTree = "<group>"; };
+		CF9332E8247DBAAF0024FFD0 /* ARDAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppClient.h; sourceTree = "<group>"; };
+		CF9332E9247DBAAF0024FFD0 /* ARDCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDCaptureController.h; sourceTree = "<group>"; };
+		CF9332EA247DBAAF0024FFD0 /* ARDAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDAppClient.m; sourceTree = "<group>"; };
+		CF9332EB247DBAAF0024FFD0 /* ARDAppEngineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDAppEngineClient.m; sourceTree = "<group>"; };
+		CF9332EC247DBAAF0024FFD0 /* RTCIceServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceServer+JSON.m"; sourceTree = "<group>"; };
+		CF9332ED247DBAAF0024FFD0 /* ARDJoinResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDJoinResponse+Internal.h"; sourceTree = "<group>"; };
+		CF9332EE247DBAB00024FFD0 /* ARDExternalSampleCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDExternalSampleCapturer.m; sourceTree = "<group>"; };
+		CF9332EF247DBAB00024FFD0 /* ARDAppClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDAppClient+Internal.h"; sourceTree = "<group>"; };
+		CF9332F0247DBAB00024FFD0 /* ARDStatsBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDStatsBuilder.h; sourceTree = "<group>"; };
+		CF9332F1247DBAB00024FFD0 /* ARDTURNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDTURNClient.h; sourceTree = "<group>"; };
+		CF9332F2247DBAB00024FFD0 /* ARDWebSocketChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDWebSocketChannel.m; sourceTree = "<group>"; };
+		CF9332F3247DBAB00024FFD0 /* ARDMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMessageResponse.h; sourceTree = "<group>"; };
+		CF9332F4247DBAB00024FFD0 /* RTCIceCandidate+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceCandidate+JSON.m"; sourceTree = "<group>"; };
+		CF9332F5247DBAB00024FFD0 /* ARDAppEngineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppEngineClient.h; sourceTree = "<group>"; };
+		CF9332F6247DBAB00024FFD0 /* ARDSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsStore.h; sourceTree = "<group>"; };
+		CF9332F7247DBAB10024FFD0 /* ARDSignalingChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSignalingChannel.h; sourceTree = "<group>"; };
+		CF9332F8247DBAB10024FFD0 /* ARDRoomServerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDRoomServerClient.h; sourceTree = "<group>"; };
+		CF9332F9247DBAB10024FFD0 /* ARDSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsStore.m; sourceTree = "<group>"; };
+		CF9332FA247DBAB10024FFD0 /* ARDStatsBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDStatsBuilder.m; sourceTree = "<group>"; };
+		CF9332FB247DBAB10024FFD0 /* ARDTURNClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDTURNClient+Internal.h"; sourceTree = "<group>"; };
+		CF9332FC247DBAB10024FFD0 /* ARDSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsModel.h; sourceTree = "<group>"; };
+		CF9332FD247DBAB10024FFD0 /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCSessionDescription+JSON.h"; sourceTree = "<group>"; };
+		CF9332FE247DBAB10024FFD0 /* ARDBitrateTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDBitrateTracker.h; sourceTree = "<group>"; };
+		CF9332FF247DBAB20024FFD0 /* ARDBitrateTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDBitrateTracker.m; sourceTree = "<group>"; };
+		CF933300247DBAB20024FFD0 /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCSessionDescription+JSON.m"; sourceTree = "<group>"; };
+		CF933312247DBAC20024FFD0 /* ARDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDUtilities.m; sourceTree = "<group>"; };
+		CF933313247DBAC20024FFD0 /* ARDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDUtilities.h; sourceTree = "<group>"; };
+		CF933319247DBB190024FFD0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF93331C247DBB360024FFD0 /* APPRTCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPRTCViewController.m; sourceTree = "<group>"; };
+		CF93331D247DBB360024FFD0 /* APPRTCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPRTCAppDelegate.h; sourceTree = "<group>"; };
+		CF93331E247DBB360024FFD0 /* APPRTCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPRTCAppDelegate.m; sourceTree = "<group>"; };
+		CF93331F247DBB360024FFD0 /* APPRTCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPRTCViewController.h; sourceTree = "<group>"; };
+		D00595B9C58CA0F71B848075 /* Pods_AppRTCDemo_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppRTCDemo_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF9332C0247DBA870024FFD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7577A9B3D5AACECBB233174 /* Pods_AppRTCDemo_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AC0B6C20DC1F42A346C8987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF157DD8247DC09E002EA488 /* WebRTC.xcframework */,
+				D00595B9C58CA0F71B848075 /* Pods_AppRTCDemo_macOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA1B7465D9B5CD67D41BE577 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B2F5F537E836E5913882C93 /* Pods-AppRTCDemo-macOS.debug.xcconfig */,
+				7C19C6FDC6FF337916BD30F3 /* Pods-AppRTCDemo-macOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF9332BA247DBA870024FFD0 = {
+			isa = PBXGroup;
+			children = (
+				CF9332C5247DBA870024FFD0 /* AppRTCDemo-macOS */,
+				CF9332C4247DBA870024FFD0 /* Products */,
+				CA1B7465D9B5CD67D41BE577 /* Pods */,
+				7AC0B6C20DC1F42A346C8987 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF9332C4247DBA870024FFD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF9332C3247DBA870024FFD0 /* AppRTCDemo-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF9332C5247DBA870024FFD0 /* AppRTCDemo-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				CF93331B247DBB2D0024FFD0 /* mac */,
+				CF933311247DBAC20024FFD0 /* common */,
+				CF9332E8247DBAAF0024FFD0 /* ARDAppClient.h */,
+				CF9332EA247DBAAF0024FFD0 /* ARDAppClient.m */,
+				CF9332EF247DBAB00024FFD0 /* ARDAppClient+Internal.h */,
+				CF9332F5247DBAB00024FFD0 /* ARDAppEngineClient.h */,
+				CF9332EB247DBAAF0024FFD0 /* ARDAppEngineClient.m */,
+				CF9332FE247DBAB10024FFD0 /* ARDBitrateTracker.h */,
+				CF9332FF247DBAB20024FFD0 /* ARDBitrateTracker.m */,
+				CF9332E9247DBAAF0024FFD0 /* ARDCaptureController.h */,
+				CF9332E0247DBAAE0024FFD0 /* ARDCaptureController.m */,
+				CF9332E1247DBAAE0024FFD0 /* ARDExternalSampleCapturer.h */,
+				CF9332EE247DBAB00024FFD0 /* ARDExternalSampleCapturer.m */,
+				CF9332DD247DBAAE0024FFD0 /* ARDJoinResponse.h */,
+				CF9332E6247DBAAF0024FFD0 /* ARDJoinResponse.m */,
+				CF9332ED247DBAAF0024FFD0 /* ARDJoinResponse+Internal.h */,
+				CF9332F3247DBAB00024FFD0 /* ARDMessageResponse.h */,
+				CF9332E5247DBAAF0024FFD0 /* ARDMessageResponse.m */,
+				CF9332DC247DBAAE0024FFD0 /* ARDMessageResponse+Internal.h */,
+				CF9332F8247DBAB10024FFD0 /* ARDRoomServerClient.h */,
+				CF9332FC247DBAB10024FFD0 /* ARDSettingsModel.h */,
+				CF9332E4247DBAAF0024FFD0 /* ARDSettingsModel.m */,
+				CF9332DA247DBAAE0024FFD0 /* ARDSettingsModel+Private.h */,
+				CF9332F6247DBAB00024FFD0 /* ARDSettingsStore.h */,
+				CF9332F9247DBAB10024FFD0 /* ARDSettingsStore.m */,
+				CF9332F7247DBAB10024FFD0 /* ARDSignalingChannel.h */,
+				CF9332DF247DBAAE0024FFD0 /* ARDSignalingMessage.h */,
+				CF9332E3247DBAAE0024FFD0 /* ARDSignalingMessage.m */,
+				CF9332F0247DBAB00024FFD0 /* ARDStatsBuilder.h */,
+				CF9332FA247DBAB10024FFD0 /* ARDStatsBuilder.m */,
+				CF9332F1247DBAB00024FFD0 /* ARDTURNClient.h */,
+				CF9332DE247DBAAE0024FFD0 /* ARDTURNClient.m */,
+				CF9332FB247DBAB10024FFD0 /* ARDTURNClient+Internal.h */,
+				CF9332E7247DBAAF0024FFD0 /* ARDWebSocketChannel.h */,
+				CF9332F2247DBAB00024FFD0 /* ARDWebSocketChannel.m */,
+				CF9332E2247DBAAE0024FFD0 /* RTCIceCandidate+JSON.h */,
+				CF9332F4247DBAB00024FFD0 /* RTCIceCandidate+JSON.m */,
+				CF9332DB247DBAAE0024FFD0 /* RTCIceServer+JSON.h */,
+				CF9332EC247DBAAF0024FFD0 /* RTCIceServer+JSON.m */,
+				CF9332FD247DBAB10024FFD0 /* RTCSessionDescription+JSON.h */,
+				CF933300247DBAB20024FFD0 /* RTCSessionDescription+JSON.m */,
+				CF9332CC247DBA880024FFD0 /* Assets.xcassets */,
+				CF9332D1247DBA880024FFD0 /* Info.plist */,
+				CF933319247DBB190024FFD0 /* main.m */,
+				CF9332D4247DBA880024FFD0 /* AppRTCDemo_macOS.entitlements */,
+			);
+			path = "AppRTCDemo-macOS";
+			sourceTree = "<group>";
+		};
+		CF933311247DBAC20024FFD0 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CF933312247DBAC20024FFD0 /* ARDUtilities.m */,
+				CF933313247DBAC20024FFD0 /* ARDUtilities.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		CF93331B247DBB2D0024FFD0 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				CF93331D247DBB360024FFD0 /* APPRTCAppDelegate.h */,
+				CF93331E247DBB360024FFD0 /* APPRTCAppDelegate.m */,
+				CF93331F247DBB360024FFD0 /* APPRTCViewController.h */,
+				CF93331C247DBB360024FFD0 /* APPRTCViewController.m */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF9332C2247DBA870024FFD0 /* AppRTCDemo-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF9332D7247DBA880024FFD0 /* Build configuration list for PBXNativeTarget "AppRTCDemo-macOS" */;
+			buildPhases = (
+				6C33057800206293ECFBB6F2 /* [CP] Check Pods Manifest.lock */,
+				53CE5DA1055E1C24F288A424 /* [CP] Prepare Artifacts */,
+				CF9332BF247DBA870024FFD0 /* Sources */,
+				CF9332C0247DBA870024FFD0 /* Frameworks */,
+				CF9332C1247DBA870024FFD0 /* Resources */,
+				E325AAEA40ACA3B403775131 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppRTCDemo-macOS";
+			productName = "AppRTCDemo-macOS";
+			productReference = CF9332C3247DBA870024FFD0 /* AppRTCDemo-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF9332BB247DBA870024FFD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Sergey Pimenov";
+				TargetAttributes = {
+					CF9332C2247DBA870024FFD0 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = CF9332BE247DBA870024FFD0 /* Build configuration list for PBXProject "AppRTCDemo-macOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF9332BA247DBA870024FFD0;
+			productRefGroup = CF9332C4247DBA870024FFD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF9332C2247DBA870024FFD0 /* AppRTCDemo-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF9332C1247DBA870024FFD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF9332CD247DBA880024FFD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53CE5DA1055E1C24F288A424 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppRTCDemo-macOS/Pods-AppRTCDemo-macOS-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppRTCDemo-macOS/Pods-AppRTCDemo-macOS-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppRTCDemo-macOS/Pods-AppRTCDemo-macOS-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C33057800206293ECFBB6F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppRTCDemo-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E325AAEA40ACA3B403775131 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppRTCDemo-macOS/Pods-AppRTCDemo-macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppRTCDemo-macOS/Pods-AppRTCDemo-macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppRTCDemo-macOS/Pods-AppRTCDemo-macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF9332BF247DBA870024FFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF933307247DBAB20024FFD0 /* ARDAppClient.m in Sources */,
+				CF93330F247DBAB20024FFD0 /* ARDBitrateTracker.m in Sources */,
+				CF93330D247DBAB20024FFD0 /* ARDSettingsStore.m in Sources */,
+				CF93330A247DBAB20024FFD0 /* ARDExternalSampleCapturer.m in Sources */,
+				CF933301247DBAB20024FFD0 /* ARDTURNClient.m in Sources */,
+				CF933305247DBAB20024FFD0 /* ARDMessageResponse.m in Sources */,
+				CF933309247DBAB20024FFD0 /* RTCIceServer+JSON.m in Sources */,
+				CF933321247DBB360024FFD0 /* APPRTCAppDelegate.m in Sources */,
+				CF93330C247DBAB20024FFD0 /* RTCIceCandidate+JSON.m in Sources */,
+				CF933310247DBAB20024FFD0 /* RTCSessionDescription+JSON.m in Sources */,
+				CF93331A247DBB190024FFD0 /* main.m in Sources */,
+				CF933302247DBAB20024FFD0 /* ARDCaptureController.m in Sources */,
+				CF933314247DBAC20024FFD0 /* ARDUtilities.m in Sources */,
+				CF933303247DBAB20024FFD0 /* ARDSignalingMessage.m in Sources */,
+				CF93330B247DBAB20024FFD0 /* ARDWebSocketChannel.m in Sources */,
+				CF93330E247DBAB20024FFD0 /* ARDStatsBuilder.m in Sources */,
+				CF933320247DBB360024FFD0 /* APPRTCViewController.m in Sources */,
+				CF933306247DBAB20024FFD0 /* ARDJoinResponse.m in Sources */,
+				CF933308247DBAB20024FFD0 /* ARDAppEngineClient.m in Sources */,
+				CF933304247DBAB20024FFD0 /* ARDSettingsModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CF9332D5247DBA880024FFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		CF9332D6247DBA880024FFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		CF9332D8247DBA880024FFD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B2F5F537E836E5913882C93 /* Pods-AppRTCDemo-macOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AppRTCDemo-macOS/AppRTCDemo_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7YR9MLZ2LB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "AppRTCDemo-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spimenov.AppRTCDemo-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF9332D9247DBA880024FFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C19C6FDC6FF337916BD30F3 /* Pods-AppRTCDemo-macOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "AppRTCDemo-macOS/AppRTCDemo_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7YR9MLZ2LB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "AppRTCDemo-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spimenov.AppRTCDemo-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF9332BE247DBA870024FFD0 /* Build configuration list for PBXProject "AppRTCDemo-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9332D5247DBA880024FFD0 /* Debug */,
+				CF9332D6247DBA880024FFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF9332D7247DBA880024FFD0 /* Build configuration list for PBXNativeTarget "AppRTCDemo-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF9332D8247DBA880024FFD0 /* Debug */,
+				CF9332D9247DBA880024FFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF9332BB247DBA870024FFD0 /* Project object */;
+}

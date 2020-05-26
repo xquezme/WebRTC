@@ -1,0 +1,6 @@
+framework module Pods_AppRTCDemo_macOS {
+  umbrella header "Pods-AppRTCDemo-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
