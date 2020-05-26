@@ -1,0 +1,22 @@
+{
+  "name": "WebRTC",
+  "version": "83.00.31360",
+  "summary": "APPRTCDemo with WebRTC SDK for iOS",
+  "homepage": "http://webrtc.org/",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Pimenov Sergey": "pimenov.sergei@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/xquezme/WebRTC.git",
+    "tag": "83.00.31360"
+  },
+  "platforms": {
+    "osx": "10.12",
+    "ios": "11.0"
+  },
+  "vendored_frameworks": "WebRTC/WebRTC.xcframework"
+}

@@ -1,0 +1,7 @@
+platform :ios, '11.0'
+use_frameworks!
+
+target 'AppRTCDemo-iOS' do
+  pod 'WebRTC', :path => '../'
+  pod 'SocketRocket', '0.5.1'
+end
