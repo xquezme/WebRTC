@@ -1,7 +1,5 @@
 # WebRTC
 
-# This repository is no longer maintained.
-
 Issue reports and pull requests will not be attended.
 
 * Please use official pod: [[GoogleWebRTC Pod](https://cocoapods.org/pods/GoogleWebRTC)]
@@ -13,7 +11,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-* iOS 9.0 or higher
+* iOS 11.0 or higher
+* macOS 10.14 or higher
 
 ## Bitcode
 
@@ -25,7 +24,7 @@ WebRTC is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'WebRTC', :git => 'https://github.com/xquezme/WebRTC.git', :tag => '61.19850-master'
+pod 'WebRTC', :git => 'https://github.com/xquezme/WebRTC.git', :tag => '85.00.31786'
 ```
 
 ## Author
